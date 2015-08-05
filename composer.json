@@ -1,0 +1,31 @@
+{
+    "name": "heyanlong/yii2-kindeditor",
+    "description": "Yii 2 kindeditor is the WYSIWYG HTML editor of the Yii 2.0 widget.",
+    "keywords": [
+        "yii2",
+        "extension",
+        "widget",
+        "kindeditor"
+    ],
+    "homepage": "https://github.com/heyanlong/yii2-kindeditor",
+    "license": "BSD-3-Clause",
+    "type": "yii2-extension",
+    "authors": [
+        {
+            "name": "heyanlong",
+            "email": "yanlong_he@163.com",
+            "homepage": "https://www.hyl.pw"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "heyanlong\\kindeditor\\": ""
+        }
+    }
+}
