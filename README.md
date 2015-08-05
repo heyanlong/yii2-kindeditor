@@ -3,7 +3,12 @@ KindEditor Widget for Yii2
 
 Renders a [KindEditor WYSIWYG HTML editor plugin](http://kindeditor.net/demo.php) widget.
 
+[![Latest Stable Version](https://poser.pugx.org/heyanlong/yii2-kindeditor/v/stable.png)](https://packagist.org/packages/heyanlong/yii2-kindeditor)
+[![Total Downloads](https://poser.pugx.org/heyanlong/yii2-kindeditor/downloads.png)](https://packagist.org/packages/heyanlong/yii2-kindeditor)
 [![Build Status](https://travis-ci.org/heyanlong/yii2-kindeditor.svg?branch=1.0)](https://travis-ci.org/heyanlong/yii2-kindeditor)
+[![Code Coverage](https://scrutinizer-ci.com/g/heyanlong/yii2-kindeditor/coverage.png?b=master)](https://scrutinizer-ci.com/g/heyanlong/yii2-kindeditor/)
+[![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/heyanlong/yii2-kindeditor/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/heyanlong/yii2-kindeditor/)
+
 
 Installation
 ------------
