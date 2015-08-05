@@ -3,6 +3,8 @@ KindEditor Widget for Yii2
 
 Renders a [KindEditor WYSIWYG HTML editor plugin](http://kindeditor.net/demo.php) widget.
 
+[![Build Status](https://travis-ci.org/heyanlong/yii2-kindeditor.svg?branch=1.0)](https://travis-ci.org/heyanlong/yii2-kindeditor)
+
 Installation
 ------------
 The preferred way to install this extension is through [composer](http://getcomposer.org/download/).
