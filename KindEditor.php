@@ -31,6 +31,7 @@ class KindEditor extends InputWidget
 
     public function run()
     {
+        $this->registerPlugin();
         if ($this->hasModel()) {
             return $this->renderActiveTextarea();
         } else {
@@ -70,10 +71,10 @@ class KindEditor extends InputWidget
 
         $options = $this->clientOptions !== false && !empty($this->clientOptions) ? Json::encode($this->clientOptions) : '{}';
 
-        $js[] = 'KindEditor.ready(function(K) {';
-        $js[] = 'window.editor = K.create(\'#' . $id . '\', ' . $options . ');';
-        $js[] = '});';
+        //$js[] = 'KindEditor.ready(function(K) {';
+        $js[] = 'window.editor = KindEditor.create(\'#' . $id . '\', ' . $options . ');';
+        //$js[] = '});';
 
-        $view->registerJs(implode("\n", $js), View::POS_READY);
+        $view->registerJs(implode("\n", $js));
     }
 }
