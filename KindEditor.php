@@ -26,6 +26,12 @@ class KindEditor extends InputWidget
 
     public function init()
     {
+        $options = [
+            'width' => '100%',
+            'afterChange' => 'function(){this.sync();'
+        ];
+        $this->clientOptions = ArrayHelper::merge($options, $this->clientOptions);
+        
         parent::init();
     }
 
