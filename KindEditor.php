@@ -7,9 +7,9 @@
 namespace heyanlong\kindeditor;
 
 
+use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 use yii\helpers\Json;
-use yii\web\View;
 use yii\widgets\InputWidget;
 
 /**
@@ -31,7 +31,7 @@ class KindEditor extends InputWidget
             'afterChange' => 'function(){this.sync();'
         ];
         $this->clientOptions = ArrayHelper::merge($options, $this->clientOptions);
-        
+
         parent::init();
     }
 
