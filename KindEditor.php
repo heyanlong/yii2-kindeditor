@@ -82,7 +82,8 @@ class KindEditor extends InputWidget
         $options = $this->clientOptions !== false && !empty($this->clientOptions) ? Json::encode($this->clientOptions) : '{}';
 
         //$js[] = 'KindEditor.ready(function(K) {';
-        $js[] = 'window.editor[' . $id . '] = KindEditor.create(\'#' . $id . '\', ' . $options . ');';
+        $js[] = 'window.editor = {};';
+        $js[] = 'window.editor.' . $id . ' = KindEditor.create(\'#' . $id . '\', ' . $options . ');';
         //$js[] = '});';
 
         $view->registerJs(implode("\n", $js));
