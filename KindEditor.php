@@ -83,7 +83,9 @@ class KindEditor extends InputWidget
 
         $jsId = str_replace(['-', ':', '.'], '_', $id);
         //$js[] = 'KindEditor.ready(function(K) {';
+        $js[] = 'if(window.editer == undefined){';
         $js[] = 'window.editor = {};';
+        $js[] = '}';
         $js[] = 'window.editor.' . $jsId . ' = KindEditor.create(\'#' . $id . '\', ' . $options . ');';
         //$js[] = '});';
 
